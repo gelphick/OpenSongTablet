@@ -438,11 +438,11 @@ public class PopUpEditSongFragment extends DialogFragment implements PopUpPresen
         edit_song_pad_file.setAdapter(pad_file);
         // Only allow auto for now (first index)
         if (FullscreenActivity.mPadFile.equals(auto)) {
-            edit_song_pad_file.setSelection(1);
-        } else if (FullscreenActivity.mPadFile.equals(link)) {
-            edit_song_pad_file.setSelection(2);
-        } else {
             edit_song_pad_file.setSelection(0);
+        } else if (FullscreenActivity.mPadFile.equals(link)) {
+            edit_song_pad_file.setSelection(1);
+        } else {
+            edit_song_pad_file.setSelection(2);
         }
 
         // Now the seekbars
